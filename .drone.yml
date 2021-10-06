@@ -52,3 +52,4 @@ trigger:
     - master
   event:
     - push
+    
