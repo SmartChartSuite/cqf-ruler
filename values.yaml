@@ -9,7 +9,7 @@ frontend:
   replicaCount: 1
   proxy:
     incomingPath: /hdapcqfruler/
-    containerPath: "" # The empty string "" means use same as incomingPath, otherwise the value in the string will replace the value of incomingPath when traffic is sent to the application in the deployed container
+    containerPath: / # The empty string "" means use same as incomingPath, otherwise the value in the string will replace the value of incomingPath when traffic is sent to the application in the deployed container
   image:
     repository: gt-build.hdap.gatech.edu/hdapcqfruler
     tag: latest
