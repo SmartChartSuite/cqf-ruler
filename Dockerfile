@@ -17,7 +17,7 @@ ENV SERVER_ADDRESS_DSTU3="https://gt-apps.hdap.gatech.edu/cqf-ruler-stu3/fhir"
 ENV SERVER_ADDRESS_R4="https://gt-apps.hdap.gatech.edu/cqf-ruler-r4/fhir"
 ENV JAVA_OPTIONS=""
 
-COPY ./r4/src/main/resources/hapi.propertiess /var/lib/jetty/webapps/config/r4.properties
+COPY ./r4/src/main/resources/hapi.properties /var/lib/jetty/webapps/config/r4.properties
 
 COPY --chown=jetty:jetty ./scripts/docker-entrypoint-override.sh /docker-entrypoint-override.sh
 ENTRYPOINT [ "sh", "/docker-entrypoint-override.sh" ]
