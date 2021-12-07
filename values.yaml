@@ -16,8 +16,3 @@ frontend:
     repository: gt-build.hdap.gatech.edu/hdapcqfruler
     tag: latest
     pullPolicy: Always
-  env:
-    - name: SERVER_ADDRESS
-      value: "https://gt-apps.hdap.gatech.edu/cqf-ruler-r4/fhir"
-    # - name: server_address_r4
-    #   value: https://gt-apps.hdap.gatech.edu/cqf-ruler-r4/fhir
