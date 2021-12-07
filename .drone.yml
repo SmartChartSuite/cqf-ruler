@@ -18,8 +18,6 @@ steps:
       dockerfile: ./Dockerfile
       tags:
         - latest
-      build_args:
-        - SERVER_ADDRESS=https://gt-apps.hdap.gatech.edu/cqf-ruler-r4/fhir
 
   - name: copy_namespace
     image: busybox:1.31
@@ -51,7 +49,7 @@ volumes:
 
 trigger:
   branch:
-    - master
+    - deploy
   event:
     - push
     
