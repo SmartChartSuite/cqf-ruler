@@ -18,6 +18,8 @@ EXPOSE 8080
 # Uncomment the appropriate lines below if you intend to not use the Docker Compose deployment.
 # ENV SERVER_ADDRESS_DSTU3=""
 # ENV SERVER_ADDRESS_R4=""
+ARG SERVER_ADDRESS
+ENV SERVER_ADDRESS=$SERVER_ADDRESS
 ENV JAVA_OPTIONS=""
 
 COPY ./r4/src/main/resources/hapi.properties /var/lib/jetty/webapps/config/r4.properties
